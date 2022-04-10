@@ -8,11 +8,9 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #444444;
+	background-color: #f3f3f3;
 }
 
-p {
-	font-size: small;
-}
 /* ===========================
             ヘッダー
 =========================== */
@@ -24,37 +22,48 @@ p {
  }
  /* ======================= */
 header {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    justify-content: space-around;
+	background-color: #ffffff;
+	
+}
+
+.container {
 	width: 1120px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
-	background-color: aliceblue; /* 後で削除する */
-}
-
-.container {
-	width: 1040px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-around;
-	border: double 2px;
+	/* border: double 2px; 後で削除 */
 }
 
 .logo-oya {
 	margin-top: 15px;
 }
 
-.nav-oya {
-	width: 800px;
-	background-color: yellowgreen;
+.logo-oya img {
+     text-align: center;
 }
 
-.nav ul {
+.nav-oya {
 	width: 720px;
+	/* background-color: yellowgreen; 後で削除 */
+}
+
+
+.nav ul {
+	width: 660px;
 	display: flex;
 	justify-content: space-between;
-	height: 80px;
-	line-height: 80px;
-	background-color: #999;
+	height:105px;
+	line-height: 105px;
+	/* background-color: #999; 後で削除 */
 }
 
 .nav ul li {
@@ -67,15 +76,14 @@ header {
 	color: #444444; */
 	display: block;
     position: relative;
-    height: 80px;
-    line-height: 80px;
+    height: 105px;
+    line-height: 105px; 
     color: #444444;
     padding: 0 15px;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
 }
-
 
 /* ========hover=========== */
 .nav li:hover {
@@ -87,6 +95,82 @@ header {
 	color: #ffffff;
 }
 /* ========hover=========== */
+
+/* ==========================
+       TOP
+============================= */
+.brand_main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrap {
+	width: 100%;
+	margin: 100px auto 0 auto;
+	/* background-color: #f3f3f3; */
+}
+
+ul {
+	padding: 0;
+	margin: 0 30px;
+	list-style: none;
+}
+ul li img {
+	max-width: 100%;
+	height: auto;
+}
+.slick-prev::before, .slick-next::before {
+	color: #333;
+}
+ 
+
+/* ==========================
+       ブランド展開
+============================= */
+.contents-oya {
+	width: 100%;
+	/* background-color: #f3f3f3; */
+	padding-top: 30px;
+}
+.brand_detail {
+	margin: 30px 0 100px 0;
+}
+
+.brand_ttl {
+	width: 590px;
+	margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* ==========================
+          写真3列2行
+============================= */
+
+.brand-list{
+	width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap:wrap;
+	padding: 10px;
+	}
+
+.brand-list li {
+	width: calc(100%/3);/*←画像を横に3つ並べる場合*/
+	padding: 20px 0 20px 25px;/*←画像の左右余白を入れる場合*/
+	box-sizing:border-box;
+	list-style: none;
+	}
+	
+.brand-list li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	}
+
+.brand-list p {
+	text-align: center;
+}
 /* ==========================
          フッター
 ============================= */
@@ -94,7 +178,7 @@ footer {
 	width: 100%;
 	margin: 0 auto;
 	/* background-color: #CCCCCC; */
-	border: solid 1px;
+	/* border: solid 1px; */
 }
 
 .ft-logo {
@@ -116,6 +200,19 @@ footer {
     width: 100%;
 	margin: 0 auto;
 	background-color: #CCCCCC;
+}
+
+/* ==========================
+         フッターリスト
+============================= */
+.list {
+	font-weight: bold;
+}
+
+.list a {
+	font-size: 18px;
+	color: #444444;
+	color: #000000;
 }
 
 .ft-nav ul {
@@ -141,6 +238,29 @@ footer {
 
 a {
 	text-decoration: none;
+}
+
+.ft-contact {
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    border: #000000 1px solid;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.ft-contact a {
+	color: #444444;
+	color: #000000;
+
 }
 
 /* ========================= */
