@@ -20,7 +20,7 @@ body {
 	visibility: hidden;
 	height: 0;
  }
- /* ======================= */
+
 header {
 	width: 100%;
 	margin: 0 auto;
@@ -32,7 +32,6 @@ header {
     z-index: 500;
     justify-content: space-around;
 	background-color: #ffffff;
-	
 }
 
 .container {
@@ -55,7 +54,6 @@ header {
 	width: 720px;
 	/* background-color: yellowgreen; 後で削除 */
 }
-
 
 .nav ul {
 	width: 660px;
@@ -96,6 +94,7 @@ header {
 }
 /* ========hover=========== */
 
+
 /* ==========================
        TOP
 ============================= */
@@ -123,7 +122,6 @@ ul li img {
 	color: #333;
 }
  
-
 /* ==========================
        ブランド展開
 ============================= */
@@ -137,11 +135,18 @@ ul li img {
 }
 
 .brand_ttl {
-	width: 590px;
+	width: 630px;
 	margin: 0 auto;
     text-align: center;
+	line-height: 30px;
 }
 
+.brand_ttl h1 {
+	margin-bottom: 30px;
+}
+span {
+	font-size: 18px;
+}
 
 
 /* ==========================
@@ -286,10 +291,17 @@ small {
 	font-size: xx-small;
 }
 
+
+
+
+
+
+
   /* ===========================
            タブレット
 =========================== */
   @media screen and (min-width:600px) and (max-width:960px){
+
 /* ===========================
             ヘッダー
 =========================== */
@@ -302,8 +314,7 @@ header {
     margin: 15px auto 0 auto;
     padding: 10px 10px 0 10px;
     justify-content: space-between;
-    align-items: center;
-	
+    align-items: center;	
 }
 
 
