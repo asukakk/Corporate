@@ -229,9 +229,17 @@ footer {
 	margin: 0 auto;
 }
 
-.ft-nav ul li,  .ft-nav2 ul li {
+.ft-nav ul li {
 	display: inline;
 	margin-right: 40px;
+	color: #444444;
+	font-size: small;
+	list-style: none;
+}
+
+.ft-nav2 ul li {
+	display: inline;
+	margin-right: 20px;
 	color: #444444;
 	font-size: small;
 	list-style: none;
