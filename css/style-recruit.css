@@ -565,7 +565,7 @@ header {
   nav.globalMenuSp {
 	position: fixed;
 	z-index : 2;
-	/* top: 60px; */
+	top: 30px; 
 	left : 0;
 	color: #000;
 	/* background: #fff; */
