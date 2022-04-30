@@ -255,10 +255,10 @@ footer {
 	background-color: #CCCCCC;
 }
 
-.ft-nav {
+.ft-nav, .ft-nav2 {
     width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
+    margin: 0 auto;
+    background-color: #CCCCCC;
 }
 
 /* ==========================
@@ -285,7 +285,7 @@ footer {
 
 .ft-nav ul li,  .ft-nav2 ul li {
 	display: inline;
-	margin-right: 20px;
+	margin-right: 40px;
 	color: #444444;
 	font-size: small;
 	list-style: none;
@@ -764,6 +764,7 @@ header {
 	margin-left: 20px;
 	height: 30px;
     line-height: 30px;
+	padding: 0;
 }
 
 .ft-contact {
