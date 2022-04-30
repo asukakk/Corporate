@@ -155,8 +155,6 @@ header {
     border-bottom: #000000 1px solid;
 }
 
-
-
 /* ======================= */
 
 /* ======================= */
@@ -276,7 +274,8 @@ footer {
 	color: #000000;
 }
 
-.ft-nav ul {
+
+.ft-nav ul,  .ft-nav2 ul{
 	height: 120px;
 	line-height: 120px;
 	text-align: center;
@@ -284,7 +283,7 @@ footer {
 	margin: 0 auto;
 }
 
-.ft-nav ul li {
+.ft-nav ul li,  .ft-nav2 ul li {
 	display: inline;
 	margin-right: 20px;
 	color: #444444;
@@ -355,46 +354,24 @@ small {
             ヘッダー
 =========================== */
 header {
-	height: 115px;
+	width: 100%;
 }
 
 .container-oya {
 	width: 100%;
-    margin: 15px auto 0 auto;
-    padding: 10px 10px 0 10px;
-    justify-content: space-between;
-    align-items: center;
-	
 }
 
+.container {
+	width: 100%;
+}
 
 .nav-oya {
 	width: 100%;
-    margin: 0 auto;
-	padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	/* background-color: beige; 後で削除する */
 }
 
 .nav {
 	width: 100%;
-	padding: 0 0 25px 0;
 }
-
-.nav li {
-    margin-left: 10px;
-	display: block;
-	float: left;
-	background-color: #444444;
-    height: 40px;
-	line-height: 40px;
-    width: 190px;
-    text-align: center;
-	font-size: smaller;
-}
-
 
 
 /*　ハンバーガーボタン　*/
@@ -457,7 +434,7 @@ header {
  nav.globalMenuSp {
    position: fixed;
    z-index : 2;
-   top: 25px;
+   top: 15px;
    left : 0;
    color: #000;
    /* background: #fff; */
@@ -481,10 +458,7 @@ header {
    width: 100%;
    border-top: 1px solid #fff;
  }
- /* nav.globalMenuSp ul li:last-child {
-   padding-bottom: 0;
-   border-bottom: none;
- } */
+ 
  nav.globalMenuSp ul li:hover{
    background :#ddd;
  }
@@ -505,15 +479,57 @@ header {
   .nav {
     display: none;
  }
-
  .logo-oya {
-	 display: none;
+	margin-left: 60px;
  }
+
+/* ==========================
+      メインコンテンツ
+============================= */
+
+.mainvisual {
+	padding: 150px 0;
+	background-image: url(../img/kodawari.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainvisual h1 {
+	margin: 0 400px 0 30px;
+	color: #ffffff;
+}
+
+.contents {
+	width: 80%;
+	padding: 0 30px;
+}
+
+/* ======================= */
+
+/* ======================= */
+
+.information_oya {
+	width: 80%;
+	padding: 0 30px;
+}
+
+.infomation_img {
+	padding: 120px 20px 0 20px;
+}
+
+
+/* ==========================
+         企業理念
+============================= */
+
+.policy {
+	width: 80%;
+	padding: 0 30px;
+}
+
 /* ==========================
          フッター
 ============================= */
-
-
 .ft-logo img {
 	width: 240px;
 }
@@ -522,21 +538,36 @@ header {
 	width: 100%;
 }
 
-.ft-nav {
+.ft-nav, .ft-nav2 {
     width: 100%;
 }
 
+
 .ft-nav ul {
-	width: 100%;
+	/* width: 100%; */
+    height: 30px;
+    line-height: 30px;
+	padding-top: 20px;
+}
+
+.ft-nav2 ul {
+	/* width: 100%; */
+	height: 30px;
+    line-height: 30px;
+}
+
+.ft-contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* ========================= */
 .Copyright {
-    width: 100%;
-	
+    width: 100%;	
 }
 
 }
+
 
   @media screen and (max-width: 600px) {
 /* ===========================
@@ -547,79 +578,22 @@ header {
 =========================== */
 header {
 	width: 100%;
-	height: 150px;
-	margin: 0 auto;
-	/* background-color: aqua;  後で削除する */
-	background-color: #CCCCCC;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 500;
-}
-
-.container-oya {
-	width: 100%;
-    margin: 0 auto;
-	display: flex;
-    /* flex-direction: column; */
-    align-items: center; 
-}
-
-.logo img {
-	padding-top: 5px;
-	width:180px;
-}
-
-.hd-icon {
-	width: 160px;
-	margin: 20px 20px 0 20px;
-	text-align: center;
-	background-color: #ffffff;	
-}
-
-.hd-icon a {
-	color: #444444;
 }
 /* ========hover=========== */
-
-.hd-icon:hover {
-	background-color: #444444;
-}
-
-.hd-icon p:hover {
-	color: #ffffff;
-}
-
-/* ========hover=========== */
-
 .container {
 	display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.container img {
-	padding: 0 5px;
+	height: 120px;
 }
 
 .nav-oya {
-	/* width: 960px; */
-	height: 5px;
-	/* width: 100%;
-    margin: 0 auto;
-	padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-	/* background-color: beige; 後で削除する */
+	width: 100%;
 }
 
-
-
-
-
-
-
+.logo-oya img {
+	margin-top: 25px;
+}
 
 
 /*　ハンバーガーボタン　*/
@@ -682,7 +656,7 @@ header {
   nav.globalMenuSp {
 	position: fixed;
 	z-index : 2;
-	top: 60px;
+	top: 30px;
 	left : 0;
 	color: #000;
 	/* background: #fff; */
@@ -724,103 +698,83 @@ header {
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
 	transform: translateX(0%);
- 
   }
  
    .nav {
 	 display: none;
   }
 
+/* ==========================
+      メインコンテンツ
+============================= */
+.contents {
+	width: 80%;
+	padding: 0 30px;
+}
+/* ======================= */
 
-  /* ==========================
+/* ======================= */
+
+.information_oya {
+	width: 80%;
+	margin: 0 auot;
+	padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infomation_img {
+    padding: 20px 20px 0 20px;
+}
+
+.infomation_img img {
+    width: 200%;
+}
+
+.information_txt {
+    width: 100%;
+    padding: 20px 5px 0 5px;
+    /* border: dotted 3px; */
+}
+
+/* ==========================
+         企業理念
+============================= */
+
+.policy {
+	width: 80%;
+	padding: 0 30px;
+}
+
+   /* ==========================
          フッター
 ============================= */
-footer {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-logo {
-	text-align: center;
-	padding-top: 30px;
-}
-
 .ft-logo img {
-	width: 240px;
+	width: 30%;
 }
 
-.ft-nav-oya {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-nav {
-    width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-nav ul {
-	width: 68%;
-	line-height: 30px;
-	display: flex;
+ .ft-nav ul {
+    display: flex;
     flex-direction: column;
-	background-color: #CCCCCC; 
-	margin: 30px auto;
-	padding-left: 80px;
-    text-align: start;
+    line-height: 30px;
+    padding-top: 20px
+} 
+
+.ft-nav2 ul {
+	margin-left: 20px;
+	height: 30px;
+    line-height: 30px;
 }
 
-.ft-nav ul li {
-	display: inline;
-	/* margin-right: 10px; */
-	margin: 0 auto;
-	color: #444444;
-	font-size: small;
-	list-style: none;
-	padding-left:10px;
-	border-left:1px solid #999;
+.ft-contact {
+	margin-top: 50px;
+	margin-bottom: 20px;
+} 
+
+.list a {
+    font-size: 12px;
 }
-
-.display-none {
-	border-left:0;
-	padding-left:0;
-}
-
-a {
-	text-decoration: none;
-}
-
-/* ========================= */
-.sns {
-	width: 100%;
-	margin: 0 auto;
-	padding-top: 15px;
-	background-color: #CCCCCC; 
-	text-align: center;
-}
-
-/* ========================= */
-
-.Copyright {
-    width: 100%;
-	margin: 0 auto;
-	padding: 10px 0;
-	background-color: #CCCCCC;
-	text-align: center;
-}
-
-small {
-    color: #444444;
-	font-size: xx-small;
-}
-
-
-
 
 
 } 
-
 
