@@ -229,7 +229,15 @@ footer {
 	margin: 0 auto;
 }
 
-.ft-nav ul li,  .ft-nav2 ul li {
+.ft-nav ul li {
+	display: inline;
+	margin-right: 40px;
+	color: #444444;
+	font-size: small;
+	list-style: none;
+}
+
+.ft-nav2 ul li {
 	display: inline;
 	margin-right: 20px;
 	color: #444444;
@@ -565,7 +573,7 @@ header {
   nav.globalMenuSp {
 	position: fixed;
 	z-index : 2;
-	top: 30px; 
+	top: 30px;
 	left : 0;
 	color: #000;
 	/* background: #fff; */
@@ -663,7 +671,9 @@ header {
     font-size: 14px;
 }
 
-
+.ft-nav ul li {
+    margin-right: 0;
+}
 
 
 
