@@ -629,7 +629,7 @@ header {
           写真3列2行
 ============================= */
 .brand-list{
-	width: 100%;
+	width: 80%;
 	flex-direction: column;
 	align-items: center;
 }
