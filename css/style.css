@@ -48,6 +48,7 @@ header {
 
 .logo-oya img {
      text-align: center;
+	 margin-bottom: 10px;
 }
 
 .nav-oya {
@@ -106,7 +107,6 @@ header {
 .wrap {
 	width: 100%;
 	margin: 180px auto 0 auto;
-	/* background-color: #f3f3f3; */
 }
 
 ul {
@@ -114,6 +114,7 @@ ul {
 	margin: 0 30px;
 	list-style: none;
 }
+
 ul li img {
 	max-width: 100%;
 	height: auto;
@@ -207,8 +208,6 @@ footer {
 	background-color: #CCCCCC;
 }
 
-
-
 /* ==========================
          フッターリスト
 ============================= */
@@ -279,7 +278,6 @@ a {
 	text-align: center;
 }
 /* ========================= */
-
 .Copyright {
     width: 100%;
 	margin: 0 auto;
@@ -293,9 +291,7 @@ small {
 	font-size: xx-small;
 }
 
-
-
-  /* ===========================
+/* ===========================
            タブレット
 =========================== */
   @media screen and (min-width:600px) and (max-width:960px){
@@ -454,7 +450,6 @@ header {
     width: 100%;
 }
 
-
 .ft-nav ul {
 	width: 100%;
     height: 30px;
@@ -497,7 +492,7 @@ header {
 	display: flex;
     flex-direction: column;
     align-items: center;
-	height: 120px;
+	height: 110px;
 }
 
 .nav-oya {
@@ -620,21 +615,22 @@ header {
 .brand-list{
 	width: 90%;
 	flex-direction: column;
+	align-items: center;
 }
 
 .brand-list li {
-    width: 100%;
-    padding: 20px 0 20px 25px;
+    width: 60%;
 }
 
 .brand_ttl {
-	width: 80%;
+	width: 80%;;
 }
-	
+
 .brand_detail {
     margin: 30px 0 10px 0;
 }
-  /* ==========================
+
+/* ==========================
          フッター
 ============================= */
 .ft-logo img {
@@ -660,10 +656,8 @@ header {
 } 
 
 .list a {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
 } 
-
-				
