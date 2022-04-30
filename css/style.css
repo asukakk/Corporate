@@ -563,7 +563,7 @@ header {
   nav.globalMenuSp {
 	position: fixed;
 	z-index : 2;
-	top: 30px;
+	top: 20px;
 	left : 0;
 	color: #000;
 	/* background: #fff; */
@@ -608,10 +608,17 @@ header {
    .nav {
 	 display: none;
   }
-
+  .contents-oya {
+    padding-top: 5px;
+}
 /* ==========================
           写真3列2行
 ============================= */
+.brand_ttl h1 {
+    line-height: 40px;
+    padding: 0 30px;
+}
+
 .brand-list{
 	width: 90%;
 	flex-direction: column;
