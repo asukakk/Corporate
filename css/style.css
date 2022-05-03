@@ -60,8 +60,8 @@ header {
 	width: 660px;
 	display: flex;
 	justify-content: space-between;
-	height:105px;
-	line-height: 105px;
+	height: 110px;
+        line-height: 110px;
 	/* background-color: #999; 後で削除 */
 }
 
