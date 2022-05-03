@@ -655,6 +655,10 @@ header {
 .ft-logo img {
 	width: 20%;
 }
+	  
+.ft-logo {
+    padding: 20px 0 ;
+}
 
  .ft-nav ul {
     display: flex;
