@@ -61,7 +61,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	height: 110px;
-        line-height: 110px;
+    line-height: 110px;
 	/* background-color: #999; 後で削除 */
 }
 
@@ -189,11 +189,11 @@ footer {
 
 .ft-logo {
 	text-align: center;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .ft-logo img {
-	width: 150px;
+	width: 100px;
 }
 
 .ft-nav-oya {
@@ -222,8 +222,8 @@ footer {
 }
 
 .ft-nav ul,  .ft-nav2 ul{
-	height: 120px;
-	line-height: 120px;
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 	background-color: #CCCCCC; 
 	margin: 0 auto;
@@ -273,7 +273,7 @@ a {
 .sns {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 	background-color: #CCCCCC; 
 	text-align: center;
 }
@@ -318,7 +318,6 @@ header {
 .nav {
 	width: 100%;
 }
-
 
 /*　ハンバーガーボタン　*/
 .hamburger {
@@ -443,7 +442,7 @@ header {
          フッター
 ============================= */
 .ft-logo img {
-	width: 240px;
+	width: 100px;
 }
 
 .ft-nav-oya {
@@ -612,6 +611,7 @@ header {
    .nav {
 	 display: none;
   }
+  
   .contents-oya {
     padding-top: 5px;
 }
@@ -645,7 +645,7 @@ header {
          フッター
 ============================= */
 .ft-logo img {
-	width: 30%;
+	width: 10%;
 }
 
  .ft-nav ul {
