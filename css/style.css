@@ -446,6 +446,7 @@ header {
 .brand-list {
     width: 80%;
 }
+
 /* ==========================
          フッター
 ============================= */
@@ -456,6 +457,7 @@ header {
 .ft-logo {
     padding: 20px 0 ;
 }
+
 .ft-nav-oya {
 	width: 100%;
 }
@@ -658,19 +660,24 @@ header {
 .ft-logo img {
 	width: 20%;
 }
-	  
+
+.ft-logo {
+    padding: 20px 0;
+}
+
  .ft-nav ul {
     display: flex;
     flex-direction: column;
     line-height: 30px;
     padding-top: 20px;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 } 
 
 .ft-nav2 ul {
-	margin-left: 20px;
+	/* margin-left: 20px; */
 	height: 30px;
     line-height: 30px;
+	padding: 0;
 }
 
 .ft-contact {
@@ -682,8 +689,8 @@ header {
     font-size: 14px;
 }
 
-.ft-nav ul li, .ft-nav2 ul li {
-    margin-right: 10px;
+.ft-nav2 ul li {
+	margin-right: 20px;
 }
 
 } 
