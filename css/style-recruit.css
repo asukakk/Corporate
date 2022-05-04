@@ -299,6 +299,7 @@ small {
 	font-size: xx-small;
 }
 
+
 /* ===========================
            タブレット
 =========================== */
@@ -680,6 +681,10 @@ header {
 	height: 30px;
     line-height: 30px;
 	padding: 0;
+}
+
+.ft-nav ul li {
+    margin-right: 0; 
 }
 
 .ft-contact {
