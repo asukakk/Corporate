@@ -184,7 +184,6 @@ header {
     font-weight: bold;
  }
 
- 
 /* ==========================
          フッター
 ============================= */
@@ -197,11 +196,11 @@ footer {
 
 .ft-logo {
 	text-align: center;
-	padding: 20px 0;
+	padding: 5px 0 20px 0;
 }
 
 .ft-logo img {
-	width: 150px;
+	width: 100px;
 }
 
 .ft-nav-oya {
@@ -210,7 +209,7 @@ footer {
 	background-color: #CCCCCC;
 }
 
-.ft-nav {
+.ft-nav, .ft-nav2 {
     width: 100%;
 	margin: 0 auto;
 	background-color: #CCCCCC;
@@ -229,9 +228,17 @@ footer {
 	color: #000000;
 }
 
-.ft-nav ul,  .ft-nav2 ul{
+.ft-nav ul {
 	height: 120px;
-	line-height: 120px;
+	line-height: 130px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav2 ul{
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 	background-color: #CCCCCC; 
 	margin: 0 auto;
@@ -281,12 +288,11 @@ a {
 .sns {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 	background-color: #CCCCCC; 
 	text-align: center;
 }
 /* ========================= */
-
 .Copyright {
     width: 100%;
 	margin: 0 auto;
@@ -430,7 +436,6 @@ header {
  /* このクラスを、jQueryで付与・削除する */
  nav.globalMenuSp.active {
    transform: translateX(0%);
-
  }
 
   .nav {
@@ -460,14 +465,21 @@ header {
 /* ==========================
          フッター
 ============================= */
+.list {
+	padding: 0;
+}
+
 .ft-logo img {
-	width: 240px;
+	width: 100px;
+}
+
+.ft-logo {
+    padding: 20px 0 ;
 }
 
 .ft-nav-oya {
 	width: 100%;
 }
-
 
 .ft-nav, .ft-nav2 {
     width: 100%;
@@ -478,7 +490,6 @@ header {
     height: 30px;
     line-height: 30px;
 	padding-top: 20px;
-	padding-left: 0;
 }
 
 .ft-nav2 ul {
@@ -495,9 +506,9 @@ header {
 
 /* ========================= */
 .Copyright {
-    width: 100%;
-	
+    width: 100%;	
 }
+
 
 }
 
@@ -638,35 +649,64 @@ header {
 	 display: none;
   }
 
-  /* ======================= */
+  .contents-oya {
+    padding-bottom: 10px;
+}
+
+/* ======================= */
 /* contact */
 /* ======================= */
 .box {
-	width: 80%;
- }
+	width: 100%;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+}
  
  .contact-details {
 	 width: 100%;
  }
 
- /* ==========================
+ .contact-details ul {
+	 padding: 0;
+ }
+
+ .contact-details li {
+    margin: 20px 0;
+}
+
+.contact-ttl h3 {
+	text-align: center;
+}
+
+/* ==========================
          フッター
 ============================= */
 .ft-logo img {
-	width: 30%;
+	width: 20%;
+}
+
+.ft-logo {
+    padding: 20px 0;
 }
 
  .ft-nav ul {
     display: flex;
     flex-direction: column;
     line-height: 30px;
-    padding-top: 20px
+    padding-top: 20px;
+	padding-bottom: 10px;
+} 
+
+.ft-nav ul li {
+    margin-right: 40px;
 } 
 
 .ft-nav2 ul {
 	/* margin-left: 20px; */
 	height: 30px;
     line-height: 30px;
+	padding: 0;
 }
 
 .ft-contact {
@@ -678,12 +718,8 @@ header {
     font-size: 14px;
 }
 
-.ft-nav ul li {
-    margin-right: 40px;
-}
-
 .ft-nav2 ul li {
-    margin-right: 10px;
+	margin-right: 20px;
 }
 
 
