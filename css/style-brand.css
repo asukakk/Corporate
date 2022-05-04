@@ -187,11 +187,11 @@ footer {
 
 .ft-logo {
 	text-align: center;
-	padding: 20px 0;
+	padding: 5px 0 20px 0;
 }
 
 .ft-logo img {
-	width: 150px;
+	width: 100px;
 }
 
 .ft-nav-oya {
@@ -205,6 +205,7 @@ footer {
 	margin: 0 auto;
 	background-color: #CCCCCC;
 }
+
 /* ==========================
          フッターリスト
 ============================= */
@@ -218,9 +219,17 @@ footer {
 	color: #000000;
 }
 
-.ft-nav ul,  .ft-nav2 ul{
+.ft-nav ul {
 	height: 120px;
-	line-height: 120px;
+	line-height: 130px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav2 ul{
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 	background-color: #CCCCCC; 
 	margin: 0 auto;
@@ -270,12 +279,11 @@ a {
 .sns {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 	background-color: #CCCCCC; 
 	text-align: center;
 }
 /* ========================= */
-
 .Copyright {
     width: 100%;
 	margin: 0 auto;
@@ -433,7 +441,11 @@ header {
          フッター
 ============================= */
 .ft-logo img {
-	width: 240px;
+	width: 100px;
+}
+
+.ft-logo {
+    padding: 20px 0 ;
 }
 
 .ft-nav-oya {
@@ -461,12 +473,14 @@ header {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
 /* ========================= */
 .Copyright {
-    width: 100%;
+    width: 100%;	
 }
 
 }
+
 
   @media screen and (max-width: 600px) {
 /* ===========================
@@ -635,20 +649,26 @@ header {
          フッター
 ============================= */
 .ft-logo img {
-	width: 30%;
+	width: 20%;
+}
+
+.ft-logo {
+    padding: 20px 0;
 }
 
  .ft-nav ul {
     display: flex;
     flex-direction: column;
     line-height: 30px;
-    padding-top: 20px
+    padding-top: 20px;
+	padding-bottom: 10px;
 } 
 
 .ft-nav2 ul {
-	margin-left: 20px;
+	/* margin-left: 20px; */
 	height: 30px;
     line-height: 30px;
+	padding: 0;
 }
 
 .ft-contact {
@@ -658,10 +678,6 @@ header {
 
 .list a {
     font-size: 14px;
-}
-
-.ft-nav ul li {
-	margin-right: 10px;
 }
 
 .ft-nav2 ul li {
