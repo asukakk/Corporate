@@ -123,7 +123,6 @@ ul li img {
 	color: #333;
 }
  
-
 /* ==========================
        ブランド展開
 ============================= */
@@ -167,11 +166,11 @@ footer {
 
 .ft-logo {
 	text-align: center;
-	padding: 20px 0;
+	padding: 5px 0 20px 0;
 }
 
 .ft-logo img {
-	width: 150px;
+	width: 100px;
 }
 
 .ft-nav-oya {
@@ -180,7 +179,7 @@ footer {
 	background-color: #CCCCCC;
 }
 
-.ft-nav {
+.ft-nav, .ft-nav2 {
     width: 100%;
 	margin: 0 auto;
 	background-color: #CCCCCC;
@@ -201,13 +200,21 @@ footer {
 
 .ft-nav ul {
 	height: 120px;
-	line-height: 120px;
+	line-height: 130px;
 	text-align: center;
 	background-color: #CCCCCC; 
 	margin: 0 auto;
 }
 
-.ft-nav ul li {
+.ft-nav2 ul{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav ul li, .ft-nav2 ul li {
 	display: inline;
 	margin-right: 20px;
 	color: #444444;
@@ -251,12 +258,11 @@ a {
 .sns {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 	background-color: #CCCCCC; 
 	text-align: center;
 }
 /* ========================= */
-
 .Copyright {
     width: 100%;
 	margin: 0 auto;
@@ -278,50 +284,24 @@ small {
             ヘッダー
 =========================== */
 header {
-	height: 115px;
+	width: 100%;
 }
 
 .container-oya {
 	width: 100%;
-    margin: 15px auto 0 auto;
-    padding: 10px 10px 0 10px;
-    justify-content: space-between;
-    align-items: center;
-	
 }
 
+.container {
+	width: 100%;
+}
 
 .nav-oya {
 	width: 100%;
-    margin: 0 auto;
-	padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	/* background-color: beige; 後で削除する */
 }
 
 .nav {
 	width: 100%;
-	padding: 0 0 25px 0;
 }
-
-.nav li {
-    margin-left: 10px;
-	display: block;
-	float: left;
-	background-color: #444444;
-    height: 40px;
-	line-height: 40px;
-    width: 190px;
-    text-align: center;
-	font-size: smaller;
-}
-
-
-
-
-
 
 /*　ハンバーガーボタン　*/
 .hamburger {
@@ -383,7 +363,7 @@ header {
  nav.globalMenuSp {
    position: fixed;
    z-index : 2;
-   top: 25px;
+   top: 10px;
    left : 0;
    color: #000;
    /* background: #fff; */
@@ -433,34 +413,63 @@ header {
  }
 
  .logo-oya {
-	 display: none;
+	margin-left: 60px;
  }
+
+ 
+ /* ==========================
+       ブランド展開
+============================= */
+.brand_detail {
+	width: 80%;
+}
+
+.brand_ttl {
+	width: 80%;
+}
+
 /* ==========================
          フッター
 ============================= */
-
-
 .ft-logo img {
-	width: 240px;
+	width: 100px;
+}
+
+.ft-logo {
+    padding: 20px 0 ;
 }
 
 .ft-nav-oya {
 	width: 100%;
 }
 
-.ft-nav {
+.ft-nav, .ft-nav2 {
     width: 100%;
 }
 
 .ft-nav ul {
 	width: 100%;
+    height: 30px;
+    line-height: 30px;
+	padding-top: 20px;
+}
+
+.ft-nav2 ul {
+	width: 100%;
+	height: 30px;
+    line-height: 30px;
+}
+
+.ft-contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* ========================= */
 .Copyright {
-    width: 100%;
-	
+    width: 100%;	
 }
+
 
 }
 
@@ -471,49 +480,8 @@ header {
 /* ===========================
             ヘッダー
 =========================== */
-header {
+.header {
 	width: 100%;
-	height: 150px;
-	margin: 0 auto;
-	/* background-color: aqua;  後で削除する */
-	background-color: #CCCCCC;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 500;
-}
-
-.container-oya {
-	width: 100%;
-    margin: 0 auto;
-	display: flex;
-    /* flex-direction: column; */
-    align-items: center; 
-}
-
-.logo img {
-	padding-top: 5px;
-	width:180px;
-}
-
-.hd-icon {
-	width: 160px;
-	margin: 20px 20px 0 20px;
-	text-align: center;
-	background-color: #ffffff;	
-}
-
-.hd-icon a {
-	color: #444444;
-}
-/* ========hover=========== */
-
-.hd-icon:hover {
-	background-color: #444444;
-}
-
-.hd-icon p:hover {
-	color: #ffffff;
 }
 
 /* ========hover=========== */
@@ -522,31 +490,16 @@ header {
 	display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.container img {
-	padding: 0 5px;
+	height: 110px;
 }
 
 .nav-oya {
-	/* width: 960px; */
-	height: 5px;
-	/* width: 100%;
-    margin: 0 auto;
-	padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-	/* background-color: beige; 後で削除する */
+	width: 100%;
 }
 
-
-
-
-
-
-
-
+.logo-oya img {
+    margin-top: 30px;
+}
 
 /*　ハンバーガーボタン　*/
 .hamburger {
@@ -608,7 +561,7 @@ header {
   nav.globalMenuSp {
 	position: fixed;
 	z-index : 2;
-	top: 60px;
+	top: 10px;
 	left : 0;
 	color: #000;
 	/* background: #fff; */
@@ -650,102 +603,65 @@ header {
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
 	transform: translateX(0%);
- 
   }
  
    .nav {
 	 display: none;
   }
 
+  .contents-oya {
+    padding-top: 5px;
+}
 
-  /* ==========================
+ /* ==========================
+       ブランド展開
+============================= */
+.brand_detail {
+	width: 80%;
+}
+
+.brand_ttl {
+	width: 80%;
+}
+
+ /* ==========================
          フッター
 ============================= */
-footer {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
+.ft-logo img {
+	width: 20%;
 }
 
 .ft-logo {
-	text-align: center;
-	padding-top: 30px;
+    padding: 20px 0;
 }
 
-.ft-logo img {
-	width: 240px;
-}
-
-.ft-nav-oya {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-nav {
-    width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-nav ul {
-	width: 68%;
-	line-height: 30px;
-	display: flex;
+ .ft-nav ul {
+    display: flex;
     flex-direction: column;
-	background-color: #CCCCCC; 
-	margin: 30px auto;
-	padding-left: 80px;
-    text-align: start;
+    line-height: 30px;
+    padding-top: 20px;
+	padding-bottom: 10px;
+} 
+
+.ft-nav2 ul {
+	/* margin-left: 20px; */
+	height: 30px;
+    line-height: 30px;
+	padding: 0;
 }
 
-.ft-nav ul li {
-	display: inline;
-	/* margin-right: 10px; */
-	margin: 0 auto;
-	color: #444444;
-	font-size: small;
-	list-style: none;
-	padding-left:10px;
-	border-left:1px solid #999;
+.ft-contact {
+	margin-top: 50px;
+	margin-bottom: 20px;
+} 
+
+.list a {
+    font-size: 14px;
 }
 
-.display-none {
-	border-left:0;
-	padding-left:0;
+.ft-nav2 ul li {
+	margin-right: 20px;
 }
-
-a {
-	text-decoration: none;
-}
-
-/* ========================= */
-.sns {
-	width: 100%;
-	margin: 0 auto;
-	padding-top: 15px;
-	background-color: #CCCCCC; 
-	text-align: center;
-}
-
-/* ========================= */
-
-.Copyright {
-    width: 100%;
-	margin: 0 auto;
-	padding: 10px 0;
-	background-color: #CCCCCC;
-	text-align: center;
-}
-
-small {
-    color: #444444;
-	font-size: xx-small;
-}
-
-
-
-
 
 } 
 
