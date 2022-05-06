@@ -33,7 +33,8 @@ header {
 }
 
 .container {
-	width: 1040px;
+	width: 1120px;
+	height: 105px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
@@ -44,17 +45,22 @@ header {
 	margin-top: 15px;
 }
 
+.logo-oya img {
+	text-align: center;
+	margin-top: -8px;
+}
+
 .nav-oya {
-	width: 800px;
+	width: 720px;
 	/* background-color: yellowgreen; 後で削除する */
 }
 
 .nav ul {
-	width: 720px;
+	width: 660px;
 	display: flex;
 	justify-content: space-between;
-	height: 80px;
-	line-height: 80px;
+	height: 105px;
+	line-height: 105px;
 	/* background-color: #999; 後で削除する */
 }
 
@@ -62,6 +68,8 @@ header {
 	list-style: none;
 	color: 444444;
 	color: #000000;
+	margin-top: -20px;
+    height: 110px;
 }
 
 .nav li a {
@@ -69,8 +77,8 @@ header {
 	color: #444444; */
 	display: block;
     position: relative;
-    height: 80px;
-    line-height: 80px;
+    height: 105px;
+    line-height: 105px;
     color: #444444;
     padding: 0 15px;
     text-decoration: none;
@@ -78,6 +86,13 @@ header {
     font-weight: bold;
 }
 
+.hamburger-oya {
+	height: 105px;
+}
+
+.logo-oya {
+	height: 105px;
+}
 
 /* ========hover=========== */
 .nav li:hover {
@@ -121,6 +136,11 @@ header {
 	text-align: center;
 }
 
+.contents h2 {
+	margin-top: 60px;
+    font-size: 30px;
+}
+
 .contents p {
 	font-size: medium;
 	line-height: 30px;
@@ -131,16 +151,13 @@ header {
 /* WORKS */
 /* ======================= */
  .box {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 50px 100px;
+	width: 880px;
+	margin: 0 auto;
  }
  
  .works-card {
-	width: 30%;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.7);
-    list-style: none;
+	width: 640px;
+	margin: 0 auto;
 }
  .works-card img {
 	width: 100%;
@@ -195,6 +212,38 @@ footer {
 	text-align: center;
 	background-color: #CCCCCC;
 }
+
+/* ==========================
+         フッター
+============================= */
+footer {
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: #CCCCCC; */
+	/* border: solid 1px; */
+}
+
+.ft-logo {
+	text-align: center;
+	padding: 5px 0 20px 0;
+}
+
+.ft-logo img {
+	width: 100px;
+}
+
+.ft-nav-oya {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
+.ft-nav, .ft-nav2 {
+    width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+}
+
 /* ==========================
          フッターリスト
 ============================= */
@@ -208,16 +257,23 @@ footer {
 	color: #000000;
 }
 
-
 .ft-nav ul {
 	height: 120px;
-	line-height: 120px;
+	line-height: 130px;
 	text-align: center;
 	background-color: #CCCCCC; 
 	margin: 0 auto;
 }
 
-.ft-nav ul li {
+.ft-nav2 ul{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background-color: #CCCCCC; 
+	margin: 0 auto;
+}
+
+.ft-nav ul li, .ft-nav2 ul li {
 	display: inline;
 	margin-right: 20px;
 	color: #444444;
@@ -256,16 +312,16 @@ a {
 	color: #000000;
 
 }
+
 /* ========================= */
 .sns {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 	background-color: #CCCCCC; 
 	text-align: center;
 }
 /* ========================= */
-
 .Copyright {
     width: 100%;
 	margin: 0 auto;
@@ -278,7 +334,6 @@ small {
     color: #444444;
 	font-size: xx-small;
 }
-
   /* ===========================
            タブレット
 =========================== */
@@ -286,52 +341,20 @@ small {
 /* ===========================
             ヘッダー
 =========================== */
+/* ===========================
+            ヘッダー
+=========================== */
 header {
-	height: 115px;
-}
-
-.container-oya {
 	width: 100%;
-    margin: 15px auto 0 auto;
-    padding: 10px 10px 0 10px;
-    justify-content: space-between;
-    align-items: center;
-	
 }
-
 
 .nav-oya {
 	width: 100%;
-    margin: 0 auto;
-	padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	/* background-color: beige; 後で削除する */
 }
 
 .nav {
 	width: 100%;
-	padding: 0 0 25px 0;
 }
-
-.nav li {
-    margin-left: 10px;
-	display: block;
-	float: left;
-	background-color: #444444;
-    height: 40px;
-	line-height: 40px;
-    width: 190px;
-    text-align: center;
-	font-size: smaller;
-}
-
-
-
-
-
-
 /*　ハンバーガーボタン　*/
 .hamburger {
    display : block;
@@ -392,7 +415,7 @@ header {
  nav.globalMenuSp {
    position: fixed;
    z-index : 2;
-   top: 25px;
+   top: 15px;
    left : 0;
    color: #000;
    /* background: #fff; */
@@ -434,7 +457,6 @@ header {
  /* このクラスを、jQueryで付与・削除する */
  nav.globalMenuSp.active {
    transform: translateX(0%);
-
  }
 
   .nav {
@@ -442,34 +464,72 @@ header {
  }
 
  .logo-oya {
-	 display: none;
+	margin-left: 60px;
  }
+ 
+ .logo-oya img {
+	 margin-top: -4px;
+ }
+
+ .contents-oya {
+    padding-bottom: 30px;
+}
+ /* ======================= */
+/* WORKS */
+/* ======================= */
+.box {
+	width: 100%;
+ }
+ 
+ .works-card {
+	width: 80%;
+}
+
 /* ==========================
          フッター
 ============================= */
-
-
 .ft-logo img {
-	width: 240px;
+	width: 100px;
+}
+
+.ft-logo {
+    padding: 20px 0 ;
 }
 
 .ft-nav-oya {
 	width: 100%;
 }
 
-.ft-nav {
+.ft-nav, .ft-nav2 {
     width: 100%;
 }
 
 .ft-nav ul {
 	width: 100%;
+    height: 30px;
+    line-height: 30px;
+	padding-top: 20px;
+	padding-left: 0;
+    padding-right: 0;
+}
+
+.ft-nav2 ul {
+	width: 80%;
+	height: 30px;
+    line-height: 30px;
+	padding: 0;
+}
+
+.ft-contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* ========================= */
 .Copyright {
-    width: 100%;
-	
+    width: 100%;	
 }
+
 
 }
 
@@ -482,80 +542,18 @@ header {
 =========================== */
 header {
 	width: 100%;
-	height: 150px;
-	margin: 0 auto;
-	/* background-color: aqua;  後で削除する */
-	background-color: #CCCCCC;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 500;
-}
-
-.container-oya {
-	width: 100%;
-    margin: 0 auto;
-	display: flex;
-    /* flex-direction: column; */
-    align-items: center; 
-}
-
-.logo img {
-	padding-top: 5px;
-	width:180px;
-}
-
-.hd-icon {
-	width: 160px;
-	margin: 20px 20px 0 20px;
-	text-align: center;
-	background-color: #ffffff;	
-}
-
-.hd-icon a {
-	color: #444444;
-}
-/* ========hover=========== */
-
-.hd-icon:hover {
-	background-color: #444444;
-}
-
-.hd-icon p:hover {
-	color: #ffffff;
 }
 
 /* ========hover=========== */
-
 .container {
 	display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container img {
-	padding: 0 5px;
-}
-
 .nav-oya {
-	/* width: 960px; */
-	height: 5px;
-	/* width: 100%;
-    margin: 0 auto;
-	padding: 10px 10px 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-	/* background-color: beige; 後で削除する */
+	width: 100%;
 }
-
-
-
-
-
-
-
-
 
 /*　ハンバーガーボタン　*/
 .hamburger {
@@ -617,7 +615,7 @@ header {
   nav.globalMenuSp {
 	position: fixed;
 	z-index : 2;
-	top: 60px;
+	top: 15px;
 	left : 0;
 	color: #000;
 	/* background: #fff; */
@@ -659,102 +657,75 @@ header {
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
 	transform: translateX(0%);
- 
   }
  
    .nav {
 	 display: none;
   }
 
+  .logo-oya img {
+    margin-top: 25px;
+}
 
-  /* ==========================
+.contents-oya {
+    padding-bottom: 20px;
+}
+
+.contents h2 {
+	margin-bottom: 40px;
+    font-size: 20px;
+}
+/* ======================= */
+/* WORKS */
+/* ======================= */
+.box {
+	width: 100%;
+ }
+ 
+ .works-card {
+	width: 80%;
+}
+
+/* ==========================
          フッター
 ============================= */
-footer {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
+.ft-logo img {
+	width: 20%;
 }
 
 .ft-logo {
-	text-align: center;
-	padding-top: 30px;
+    padding: 20px 0;
 }
 
-.ft-logo img {
-	width: 240px;
-}
-
-.ft-nav-oya {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-nav {
-    width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-}
-
-.ft-nav ul {
-	width: 68%;
-	line-height: 30px;
-	display: flex;
+ .ft-nav ul {
+    display: flex;
     flex-direction: column;
-	background-color: #CCCCCC; 
-	margin: 30px auto;
-	padding-left: 80px;
-    text-align: start;
-}
+    line-height: 30px;
+    padding-top: 20px;
+	padding-bottom: 10px;
+} 
 
 .ft-nav ul li {
-	display: inline;
-	/* margin-right: 10px; */
-	margin: 0 auto;
-	color: #444444;
-	font-size: small;
-	list-style: none;
-	padding-left:10px;
-	border-left:1px solid #999;
+	margin-right: 40px;
+}
+.ft-nav2 ul {
+	height: 30px;
+    line-height: 30px;
+	padding: 0 0 0 9px;
 }
 
-.display-none {
-	border-left:0;
-	padding-left:0;
+.ft-contact {
+	margin-top: 50px;
+	margin-bottom: 20px;
+} 
+
+.list a {
+    font-size: 14px;
 }
 
-a {
-	text-decoration: none;
+.ft-nav2 ul li {
+	margin-right: 20px;
 }
-
-/* ========================= */
-.sns {
-	width: 100%;
-	margin: 0 auto;
-	padding-top: 15px;
-	background-color: #CCCCCC; 
-	text-align: center;
-}
-
-/* ========================= */
-
-.Copyright {
-    width: 100%;
-	margin: 0 auto;
-	padding: 10px 0;
-	background-color: #CCCCCC;
-	text-align: center;
-}
-
-small {
-    color: #444444;
-	font-size: xx-small;
-}
-
-
-
-
 
 } 
 
