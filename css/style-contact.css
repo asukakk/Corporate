@@ -642,7 +642,7 @@ header {
   /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
 	transform: translateX(0%);
- 
+
   }
  
    .nav {
@@ -650,7 +650,7 @@ header {
   }
 
   .contents-oya {
-    padding-bottom: 10px;
+    padding-bottom: px;
 }
 
 /* ======================= */
